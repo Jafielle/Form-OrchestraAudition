@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Orchestra Audition Form</title>
+      <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+      <div class="container">
+            <!--takes all the form box-->
+            <header class="header">
+                  <h1 id="title" class="text">Audition Form</h1>
+                  <p id="description" class="text2">
+                        Tell us about yourself
+                  </p>
+            </header>
+            <form id="survey-form" action="">
+                  <div class="single">
+                        <label id="name-label" for="name">Name</label>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="First Last" required>
+                  </div>
+                  <div class="single">
+                        <label id="email-label" for="email">Email</label>
+                        <input id="email" type="email" name="email" class="form-control" placeholder="name@email.dom"
+                              required=>
+                  </div>
+                  <div class="single">
+                        <label id="number-label" for="number">Age<span class="clue"> (optional)</span></label>
+                        <input id="number" type="number" name="age" min="18" max="120" class="form-control"
+                              placeholder="Age">
+                  </div>
+                  <div>
+                        <p>Select the orchestra section you are applying for</p>
+                        <select id="dropdown" name="section" class="form-control" required>
+                              <option disabled selected>Display sections</option>
+                              <option value="strings">Strings</option>
+                              <option value="woodwinds">Woodwinds</option>
+                              <option value="brass">Brass</option>
+                              <option value="percussion">Percussion</option>
+                              <option value="other">Other</option>
+                        </select>
+                  </div>
+                  <div class="single">
+                        <label id="instrument-label" for="instrument">Instrument</label>
+                        <input id="instrument" type="text" name="instrument" class="form-control" placeholder="Type yoour instrument" required>
+                  </div>
+                  <div>
+                        <p>Select the ABRSM grade you are currently at</p>
+                        <select id="dropdown1" name="grade" class="form-control" required>
+                              <option disabled selected>ABRSM Grade</option>
+                              <option value="G1">Grade 1</option>
+                              <option value="G2">Grade 2</option>
+                              <option value="G3">Grade 3</option>
+                              <option value="G4">Grade 4</option>
+                              <option value="G5">Grade 5</option>
+                              <option value="G6">Grade 6</option>
+                              <option value="G7">Grade 7</option>
+                              <option value="G8">Grade 8</option>
+                        </select>
+                        <P><i>*If you haven't done any ABRSM assessments please go to the official <a
+                                          href="https://www.abrsm.org/">ABRSM</a> website</i></P>
+                  </div>
+                  <div class="form-group" id="audition">
+                        <p>Select the type of auditionn</p>
+                        <label>
+                              <input id="live" name="audition-type" value="live" type="radio" class="input-radio">Live
+                              (preferred)</label>
+                        <label>
+                              <input id="recorded" name="audition-type" value="recorded" type="radio"
+                                    class="input-radio">Recorded</label>
+                  </div>
+                  <div class="form-group">
+                        <p>
+                              Have you ever...
+                              <span class="clue">(Check all that apply)</span>
+                        </p>
+
+                        <label><input name="Have" value="taught anyone how to play an instrument" type="checkbox"
+                                    class="input-checkbox">taught anyone how to play an instrument</label>
+                        <label>
+                              <input name="Have" value="created musical arrangemets" type="checkbox"
+                                    class="input-checkbox">created musical arrangemets</label>
+                        <label><input name="Have" value="made a musical composition" type="checkbox"
+                                    class="input-checkbox">made a musical composition</label>
+                        <label><input name="Have" value="dealt with performance anxiety" type="checkbox"
+                                    class="input-checkbox">dealt with performance anxiety</label>
+                        <label><input name="Have" value="played at a wedding or a public event" type="checkbox"
+                                    class="input-checkbox">played at a wedding or a public event</label>
+                        <label><input name="Have" value="Participated in any music competitions" type="checkbox"
+                                    class="input-checkbox">Participated in any music competitions</label>
+                  </div>
+                  <div>
+                        <p>Tell us a bit about your musical background and achievements</p>
+                        <textarea id="aboutyou" class="input-textarea" name="aboutyou" rows="5" cols="50"
+                              placeholder="My musical journey..."></textarea>
+                  </div>
+                  <div>
+                        <button type="submit" id="submit" class="submit-button">
+                              Submit
+                        </button>
+                  </div>
+
+            </form>
+      </div>
+</body>
+
+</html>
